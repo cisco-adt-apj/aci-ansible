@@ -126,20 +126,3 @@
            password: "{{ pass }}"
            protocol: "{{ protocol }}"
 
-      - name: Deploying EPG_100
-        aci_epg_domain_binding:
-           action: "{{ action }}"
-           app_profile_name: "{{ app_profile_name }}"
-           tenant_name: "{{ tenant_name }}"
-           epg_name: "{{ item }}"
-           domain: vmm
-           domain_profile: "{{ vmm_domain }}"
-           deploy_immediacy: immediate
-           host: "{{ host }}"
-           username: "{{ user }}"
-           password: "{{ pass }}"
-           protocol: "{{ protocol }}"
-        with_items:
-            - "{{ epg_name1 }}"
-            - "{{ epg_name2 }}"
-
