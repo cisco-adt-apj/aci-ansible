@@ -23,7 +23,7 @@
         epg_name1: epg_vlan_100
         epg_name2: epg_vlan_200
         vmm_domain: prod
-        protocol: http    
+        protocol: https
 
     tasks:
 
